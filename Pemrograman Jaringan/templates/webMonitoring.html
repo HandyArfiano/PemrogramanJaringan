@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Pemrograman Jaringan | Monitoring Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.0/dist/cdn.min.js"></script>
+  </head>
+  
+  <body>
+  <script>
+    function websiteStatus() {
+    return {
+        isLoading: true,
+        statuses: [],
+        intervals: [],
+        fetchData() {
+            Promise.all([
+                fetch("api/website").then((response) => response.json()),
+                fetch("api/status").then((response) => response.json()),
+            ])
+                .then(([websites, statuses]) => {
+                    this.statuses = websites.data.map((site) => ({
+                        ...site,
+                        status: statuses[site.url] || "Warning",
+                        timer: this.getIntervalTime(statuses[site.url] || "Warning"),
+                    }));
+                    this.isLoading = false;
+                    this.startIntervals();
+                })
+                .catch((error) => {
+                    console.error("Error fetching data:", error);
+                    this.isLoading = false;
+                });
+        },
+        getIntervalTime(status) {
+            switch (status) {
+                case "Up":
+                    return 60;
+                case "Down":
+                    return 30;
+                case "Warning":
+                    return 20;
+                case "Redirect":
+                    return 25;
+                default:
+                    return 60;
+            }
+        },
+        statusClass(status) {
+            return {
+                "text-success": status === "Up",
+                "text-danger": status === "Down",
+                "text-warning": status === "Warning",
+                "text-primary": status === "Redirect",
+            };
+        },
+
+        startIntervals() {
+            this.statuses.forEach((site, index) => {
+                this.intervals[index] = setInterval(() => {
+                    if (site.timer > 0) {
+                        site.timer--;
+                    } else {
+                        this.updateStatus(site.url, index);
+                    }
+                }, 1000);
+            });
+        },
+        updateStatus(url, index) {
+            fetch(`/api/status?url=${encodeURIComponent(url)}`)
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok");
+                    }
+                    return response.json();
+                })
+                .then((data) => {
+                    const newStatus = data[url] || "Warning";
+                    this.statuses[index].status = newStatus;
+                    this.statuses[index].timer = this.getIntervalTime(newStatus);
+                    this.statuses[index].lastUpdate = new Date().toLocaleString();
+
+                    if (newStatus === "Redirect") {
+                      window.location.href = url;
+                    }
+                })
+                .catch((error) => {
+                    console.error("Error updating status:", error);
+                    this.statuses[index].timer = this.getIntervalTime("Warning");
+                    this.statuses[index].lastUpdate = new Date().toLocaleString();
+                });
+        },
+    };
+}
+  </script>
+  <table class="table" x-data="websiteStatus" x-init="fetchData">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col" class="text-center">PTS</th>
+        <th scope="col">Status</th>
+        <th scope="col">Timer</th>
+        <th scope="col">Aksi</th>
+        <th scope="col">Last Updated</th>
+      </tr>
+    </thead>
+    <tbody>
+      <template class="d-flex justify-content-start" x-for="status in statuses" :key="status.url">
+        <tr>
+          <td>
+            <div class="p-1 d-flex align-items-center">
+              <img :src="status.img" class="card-img-top mx-auto p-2 pt-2" alt="..." style="width: 4rem;" />
+            </div>
+          </td>
+          <td>
+            <h5 class="card-title text-center" x-text="status.name"></h5>
+          </td>
+          <td>
+            <p :class="statusClass(status.status)" x-text="status.status"></p>
+          </td>
+          <td><span x-text="status.timer"></span>s</td>
+          <td>
+            <a :href="status.url" target="_blank" class="btn btn-primary">Kunjungi Website</a>
+          </td>
+          <td><span x-text="status.lastUpdate"></span></td>
+        </tr>
+      </template>
+    </tbody>
+  </table>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
