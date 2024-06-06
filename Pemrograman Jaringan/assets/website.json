@@ -1,0 +1,231 @@
+{
+    "data": [
+    {
+        "name": "Universitas Pasundan",
+        "url": "https://www.unpas.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/1.unpas.png"
+    },
+    {
+        "name": "Universitas Komputer Indonesia",
+        "url": "https://unikom.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/2.unikom.jpeg"
+    },
+    {
+        "name": "Universitas Widyatama",
+        "url": "https://www.widyatama.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/3.widyatama.jpeg"
+    },
+    {
+        "name": "Universitas Islam Bandung",
+        "url": "https://unisba.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/4.unisba.png"
+    },
+    {
+        "name": "Univeritas Katolik Parahyangan",
+        "url": "https://unpar.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/5.unpar.png"
+    },
+    {
+        "name": "Universitas Kristen Maranatha",
+        "url": "https://www.maranatha.edu/",
+        "img": "assets/img/LLDIKTI-IV/6.maranatha.png"
+    },
+    {
+        "name": "President University",
+        "url": "https://president.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/7.president.jpeg"
+    },
+    {
+        "name": "Universitas Serang Raya",
+        "url": "https://unsera.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/8.unsera.jpeg"
+    },
+    {
+        "name": "Universitas Bina Bangsa",
+        "url": "https://binabangsa.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/9.binabangsa.png"
+    },
+    {
+        "name": "Universitas Mandiri",
+        "url": "https://universitasmandiri.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/10.universitasmandiri.jpeg"
+    },
+    {
+        "name": "Universitas Satu",
+        "url": "https://satu.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/11.satu.png"
+    },
+    {
+        "name": "Akademi Tata Boga Bandung",
+        "url": "https://atb-bandung.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/12.atb-bandung.jpeg"
+    },
+    {
+        "name": "Institut Kesehatan Immanuel",
+        "url": "https://institutkesehatan-immanuel.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/13.institutkesehatan-immanuel.jpeg"
+    },
+    {
+        "name": "Institut Teknologi Harapan Bangsa",
+        "url": "https://www.ithb.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/14.ithb.jpeg"
+    },
+    {
+        "name": "Telkom Univerity",
+        "url": "https://telkomuniversity.ac.id/",
+        "img": "assets/img/LLDIKTI-IV/15.telkomuniverity.png"
+    },
+
+    {
+        "name": "Petra Christian University",
+        "url": "https://www.petra.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/1.petra.png"
+    },
+    {
+        "name": "Universitas Dr.Soetomo",
+        "url" : "https://www.unitomo.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/2.unitomo.jpeg"
+    },
+    {
+        "name": "Universitas Surabaya",
+        "url": "https://www.ubaya.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/3.ubaya.png"
+    },
+    {
+        "name": "Universitas Muhammadiyah Surabaya",
+        "url": "https://www.um-surabaya.ac.id",
+        "img": "assets/img/LLDIKTI-VII/4.um-surabaya.png"
+    },
+    {
+        "name": "Universitas Ciputra",
+        "url": "https://www.ciputra.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/5.ciputra.jpeg"
+    },
+    {
+        "name": "Universitas Wijaya Kusuma Surabaya",
+        "url": "https://uwks.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/6.uwks.png"
+    },
+    {
+        "name": "Universitas NU Surabaya",
+        "url": "https://unusa.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/7.unusa.png"
+    },
+    {
+        "name": "Universitas Narotama",
+        "url": "https://www.narotama.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/8.narotama.jpeg"
+    },
+    {
+        "name": "Universitas 17 Agustus 1945 Surabaya",
+        "url": "https://untag-sby.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/9.untag-sby.png"
+    },
+    {
+        "name": "Universitas Katolik Widya Mandala Surabaya",
+        "url": "https://ukwms.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/10.ukwms.png"
+    },
+    {
+        "name": "Telkom Univerity Surabaya",
+        "url": "https://surabaya.telkomuniversity.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/11.surabaya.telkomuniversity.png"
+    },
+    {
+        "name": "Universitas PGRI Adi Buana Surabaya",
+        "url": "https://unipasby.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/12.unipasby.png"
+    },
+    {
+        "name": "Universitas 45 Surabaya",
+        "url": "https://univ45sby.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/13.univ45sby.jpeg"
+    },
+    {
+        "name": "Universitas Hang Tuah",
+        "url": "https://hangtuah.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/14.hangtuah.png"
+    },
+    {
+        "name": "Universitas WR Supratman",
+        "url": "https://unipra.ac.id/",
+        "img": "assets/img/LLDIKTI-VII/15.unipra.jpeg"
+    },
+
+    {
+        "name": "Universitas Katolik Widya Mandira",
+        "url": "https://unwira.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/1.unwira.png"
+    },
+    {
+        "name": "Univeritas Katolik Indonesia Santu Paulus",
+        "url": "https://unikastpaulus.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/2.unikastpaulus.jpeg"
+    },
+    {
+        "name": "Universitas Kristen Wira Wacana",
+        "url": "https://unkriswina.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/3.unkriswina.png"
+    },
+    {
+        "name": "Universitas Kristen Artha Wacana",
+        "url": "https://ukaw.ac.id/web/",
+        "img": "assets/img/LLDIKTI-XV/4.ukaw.jpeg"
+    },
+    {
+        "name": "Institut Filsafat dan Teknologi Kreatif Ledalero",
+        "url": "https://www.iftkledalero.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/5.iftkledalero.jpeg"
+    },
+    {
+        "name": "Universitas Flores",
+        "url": "https://www.uniflor.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/6.uniflor.jpeg"
+    },
+    {
+        "name": "Universitas Nusa Nipa",
+        "url": "https://nusanipa.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/7.nusanipa.jpeg"
+    },
+    {
+        "name": "STKIP Citra Bakti Ngada",
+        "url": "https://www.citrabakti.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/8.citrabakti.jpeg"
+    },
+    {
+        "name": "Universitas Muhammadiyah Maumere",
+        "url": "https://unimof.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/9.unimof.png"
+    },
+    {
+        "name": "Universitas Tribuana Kalabahi",
+        "url": "https://www.utk-alor.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/10.utk-alor.jpeg"
+    },
+    {
+        "name": "Universitas San Pedro",
+        "url": "https://unisap.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/11.unisap.jpeg"
+    },
+    {
+        "name": "Universitas Nusa Lontar Rote",
+        "url": "https://www.unstarrote.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/12.unstarrote.jpeg"
+    },
+    {
+        "name": "Universitas Karyadarma Kupang",
+        "url": "https://undarma-kupang.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/13.undarma-kupang.jpeg"
+    },
+    {
+        "name": "Universitas Katolik Weetbula",
+        "url": "https://unika-weetebula.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/14.Unika-weetbula.jpeg"
+    },
+    {
+        "name": "Universitas Aryasatya Deo Muri",
+        "url": "http://unasdem.ac.id/",
+        "img": "assets/img/LLDIKTI-XV/15.Unasdem.jpeg"
+    }
+]
+}

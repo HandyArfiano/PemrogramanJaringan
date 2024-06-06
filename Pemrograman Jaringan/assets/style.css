@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.custom-img-size {
+    max-width: 5px;
+    height: auto;
+}
+
+a:hover {
+    scale: 1.1;
+    transition: 100ms;
+}
+
+.card {
+    height: 350px;
+}
+
+.card-title {
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text {
+    overflow: auto;
+}
+
+.success {
+    color: rgba(0, 255, 0, 0.3);
+}
+
+.danger {
+    color: rgba(255, 0, 0, 0.3);
+}
+
+.warning {
+    color: rgba(255, 166, 0, 0.3);
+}
